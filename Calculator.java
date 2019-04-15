@@ -28,6 +28,35 @@ class Calc implements ActionListener{
 	int tempNumber = 0;
 
 	int actionToDo = 0;
+	
+	//Driver
+	Calc(){
+		num7.setBounds(40, 100, 40, 40);
+		num8.setBounds(120, 100, 40, 40);
+		num9.setBounds(200, 100, 40, 40);
+		sym_plus.setBounds(280, 100, 40, 40);
+
+		num4.setBounds(40, 180, 40, 40);
+		num5.setBounds(120, 180, 40, 40);
+		num6.setBounds(200, 180, 40, 40);
+		sym_minus.setBounds(280, 180, 40, 40);
+
+		num1.setBounds(40, 260, 40, 40);
+		num2.setBounds(120, 260, 40, 40);
+		num3.setBounds(200, 260, 40, 40);
+		sym_multiply.setBounds(280, 260, 40, 40);
+
+		num0.setBounds(40, 340, 200, 40);
+		sym_divide.setBounds(280, 340, 40, 40);
+
+		sym_eq.setBounds(280, 420, 40, 40);
+
+		output.setBounds(40, 40, 280, 40);
+		
+		f.setLayout(null);
+		f.setVisible(true);
+		f.setSize(360,500);
+	}
 
 
   public static void main(String[] args) {

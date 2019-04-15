@@ -96,9 +96,72 @@ class Calc implements ActionListener{
 		f.setVisible(true);
 		f.setSize(360,500);
 	}
+	
+	public void actionPerformed(ActionEvent ae){
 
+		if (ae.getSource() == num1){
+			inputNum = (10*inputNum) + 1;
+			putText.append("1");
+			output.setText(putText.toString());
+		}
 
-  public static void main(String[] args) {
+		if (ae.getSource() == num2){
+			inputNum = (10*inputNum) + 2;
+			putText.append("2");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num3){
+			inputNum = (10*inputNum) + 3;
+			putText.append("3");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num4){
+			inputNum = (10*inputNum) + 4;
+			putText.append("4");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num5){
+			inputNum = (10*inputNum) + 5;
+			putText.append("5");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num6){
+			inputNum = (10*inputNum) + 6;
+			putText.append("6");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num7){
+			inputNum = (10*inputNum) + 7;
+			putText.append("7");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num8){
+			inputNum = (10*inputNum) + 8;
+			putText.append("8");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num9){
+			inputNum = (10*inputNum) + 9;
+			putText.append("9");
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == num0){
+			inputNum = (10*inputNum) + 0;
+			putText.append("0");
+			output.setText(putText.toString());
+		}
+
+	}
+
+  	public static void main(String[] args) {
 		new Calc();
 	}
 }

@@ -190,6 +190,21 @@ class Calc implements ActionListener{
 			actionToDo = 1;
 			output.setText(putText.toString());
 		}
+		
+		if (ae.getSource() == sym_eq){
+			if (actionToDo == 1){
+				output.setText(String.valueOf(inputNum + tempNumber));
+			}
+			if (actionToDo == 2){
+				output.setText(String.valueOf(tempNumber - inputNum));
+			}
+			if (actionToDo == 3){
+				output.setText(String.valueOf(inputNum * tempNumber));
+			}
+			if (actionToDo == 4){
+				output.setText(String.valueOf(tempNumber/inputNum));
+			}
+		}
 
 	}
 

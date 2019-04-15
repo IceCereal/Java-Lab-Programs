@@ -53,6 +53,45 @@ class Calc implements ActionListener{
 
 		output.setBounds(40, 40, 280, 40);
 		
+		f.add(output);
+
+		f.add(num7);
+		f.add(num8);
+		f.add(num9);
+		f.add(sym_plus);
+		
+		f.add(num4);
+		f.add(num5);
+		f.add(num6);
+		f.add(sym_minus);
+
+		f.add(num1);
+		f.add(num2);
+		f.add(num3);
+		f.add(sym_multiply);
+
+		f.add(num0);
+		f.add(sym_divide);
+
+		f.add(sym_eq);
+
+		num1.addActionListener(this);
+		num2.addActionListener(this);
+		num3.addActionListener(this);
+		num4.addActionListener(this);
+		num5.addActionListener(this);
+		num6.addActionListener(this);
+		num7.addActionListener(this);
+		num8.addActionListener(this);
+		num9.addActionListener(this);
+		num0.addActionListener(this);
+
+		sym_divide.addActionListener(this);
+		sym_minus.addActionListener(this);
+		sym_multiply.addActionListener(this);
+		sym_plus.addActionListener(this);
+		sym_eq.addActionListener(this);
+		
 		f.setLayout(null);
 		f.setVisible(true);
 		f.setSize(360,500);

@@ -158,6 +158,38 @@ class Calc implements ActionListener{
 			putText.append("0");
 			output.setText(putText.toString());
 		}
+		
+		if (ae.getSource() == sym_divide){
+			tempNumber = inputNum;
+			inputNum = 0;
+			actionToDo = 4;
+			putText.setLength(0);
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == sym_minus){
+			tempNumber = inputNum;
+			inputNum = 0;
+			putText.setLength(0);
+			actionToDo = 2;
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == sym_multiply){
+			tempNumber = inputNum;
+			inputNum = 0;
+			putText.setLength(0);
+			actionToDo = 3;
+			output.setText(putText.toString());
+		}
+
+		if (ae.getSource() == sym_plus){
+			tempNumber = inputNum;
+			inputNum = 0;
+			putText.setLength(0);
+			actionToDo = 1;
+			output.setText(putText.toString());
+		}
 
 	}
 

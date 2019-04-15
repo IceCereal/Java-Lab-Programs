@@ -20,6 +20,15 @@ class Calc implements ActionListener{
 	Button sym_multiply = new Button("*");
 	Button sym_divide = new Button("/");
 	Button sym_eq = new Button("=");
+	
+	TextField output = new TextField();
+
+	StringBuilder putText = new StringBuilder();
+	int inputNum = 0;
+	int tempNumber = 0;
+
+	int actionToDo = 0;
+
 
   public static void main(String[] args) {
 		new Calc();
